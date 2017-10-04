@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- <canvas id="myCanvas"></canvas> -->
+<header>
+	<h1>Hangman Game</h1>
+	<p id="startGame">CLICK TO START</p>
+</header>
+
+<div class="container clearfix">
+	<div class="leftSide">
+		<div class="smallBox">
+			<h2>Remaining Guesses: </h2>
+			<div id="guessesCounter"></div>
+		</div>
+
+		<div class="smallBox">
+			<h2>Wins: </h2>
+			<div id="wins"></div>
+		</div>
+
+		<div class="smallBox">
+			<h2>Losses:</h2>
+			<div id="losses"></div>
+		</div>
+	</div>
+	<div class="rightSide">
+		<div class="hangmanBox">
+		</div>
+		<div class="guessingBox">
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
