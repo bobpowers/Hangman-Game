@@ -107,7 +107,6 @@ var beginGame = function(){
 
 	document.onkeyup = function(event) {
 		var keyPress = event.key;
-		console.log(keyPress);
 		// INCORRECT GUESSES
 		for (var i = 0; i < alphabet.length; i++) {
 			if (alphabet[i] === keyPress) {
@@ -117,7 +116,6 @@ var beginGame = function(){
 				letterReveal();
 				checkEndGame();
 			}
-			// console.log(alphabet);
 		}
 		// CORRECT GUESSES - FILL IN BLANKS
 		for (var i = cityToArray.length -1; i >= 0; i--) {			
@@ -131,16 +129,7 @@ var beginGame = function(){
 				}
 			}
 		}
-
-
-
 	}
 
-
-	// console.log(cityToArray)
-
-
 document.getElementById("startGame").addEventListener("click", beginGame);
-
-// splitTheCity()
 
